@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sinjid: Shadow of the Warrior</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden}
+  body{display:flex;align-items:center;justify-content:center;font:15px/1.4 Arial,Helvetica,sans-serif;color:#ccc}
+  #stage{visibility:hidden;display:block;touch-action:none;user-select:none;-webkit-user-select:none;outline:none}
+  #overlay{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#000}
+  #overlay h1{margin:0;font:600 26px Georgia,serif;color:#e6e6e6;letter-spacing:.04em}
+  #track{width:260px;height:6px;background:#222;border-radius:3px;overflow:hidden}
+  #bar{height:100%;width:0;background:#9ab}
+  #start{display:none;padding:10px 26px;font:600 15px Arial,sans-serif;color:#000;background:#dde;border:0;border-radius:4px;cursor:pointer}
+  #start:hover{background:#fff}
+  #status{font-size:12px;color:#888;min-height:1em}
+</style>
+</head>
+<body>
+<div id="overlay">
+  <h1>Sinjid: Shadow of the Warrior</h1>
+  <div id="track"><div id="bar"></div></div>
+  <div id="status">Loading…</div>
+  <button id="start" type="button">Play</button>
+</div>
+<canvas id="stage" width="600" height="470" tabindex="0"></canvas>
+<script src="data/library.js"></script>
+<script src="data/scripts.js"></script>
+<script src="js/as.js"></script>
+<script src="js/display.js"></script>
+<script src="js/text.js"></script>
+<script src="js/render.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/builtins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
